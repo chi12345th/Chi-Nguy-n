@@ -2,47 +2,38 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Bảng Điểm Thi</title>
+    <title>Nhãn dán điểm thi</title>
     <style>
-        /* Tạo kiểu dáng tổng thể cho nhãn dán / bảng */
         .score-table {
             border-collapse: collapse;
             font-family: Arial, sans-serif;
             font-size: 14px;
             text-align: center;
             background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin: 20px;
         }
-
         .score-table th, 
         .score-table td {
             padding: 10px 15px;
         }
-
-        /* Màu sắc theo yêu cầu */
         .col-name {
             border: 2px solid blue;
             background-color: #f0f4ff;
             font-weight: bold;
         }
-
         .col-score-header {
             border: 2px solid blue;
             background-color: #eef2ff;
             font-weight: bold;
         }
-
         .col-math {
             border: 2px solid red;
             background-color: #fff5f5;
         }
-
         .col-physics {
-            border: 2px solid #cccc00; /* Vàng đậm hơn chút cho dễ đọc */
+            border: 2px solid #cccc00;
             background-color: #fffdf0;
         }
-
         .col-chemistry {
             border: 2px solid green;
             background-color: #f0fff0;
@@ -51,23 +42,15 @@
 </head>
 <body>
 
-    <!-- Bảng dữ liệu / Nhãn dán -->
     <table class="score-table">
         <tr>
             <th rowspan="2" class="col-name">Họ tên</th>
-            <th colspan="3" rowspan="1" class="col-score-header">Điểm thi</th>
+            <th colspan="3" class="col-score-header">Điểm thi</th>
         </tr>
         <tr>
             <td class="col-math">Toán</td>
             <td class="col-physics">Vật lí</td>
             <td class="col-chemistry">Hóa học</td>
-        </tr>
-        <!-- Dòng mẫu dữ liệu -->
-        <tr>
-            <td class="col-name">Nguyễn Văn A</td>
-            <td class="col-math">8.5</td>
-            <td class="col-physics">9.0</td>
-            <td class="col-chemistry">8.0</td>
         </tr>
     </table>
 
